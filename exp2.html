@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Form - Support Our Cause</title>
+</head>
+
+<body>
+
+    <h1>🕊️ Support Our Cause - Make a Donation</h1>
+    <p>Your generous contribution helps us provide education and healthcare to underprivileged children. Every little bit counts!</p>
+    
+    <a href="#" title="Visit Our Main Website">
+        <img src="https://via.placeholder.com/150x60.png?text=Our+NGO+Logo" alt="NGO Logo">
+    </a>
+
+    <form action="#" method="post" autocomplete="on">
+        
+        <fieldset>
+            <legend>Your Information</legend>
+            <table border="1">
+                <tr>
+                    <td><label for="fullName">Full Name:</label></td>
+                    <td><input type="text" id="fullName" name="fullName" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                 <tr>
+                    <td><label for="phone">Phone Number:</label></td>
+                    <td><input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g., 9876543210"></td>
+                </tr>
+                 <tr>
+                    <td><label for="website">Website/Blog (Optional):</label></td>
+                    <td><input type="url" id="website" name="website" placeholder="https://example.com"></td>
+                </tr>
+                 <tr>
+                    <td><label for="dob">Date of Birth:</label></td>
+                    <td><input type="date" id="dob" name="dob"></td>
+                </tr>
+                 <tr>
+                    <td><label for="contactTime">Preferred Contact Time:</label></td>
+                    <td><input type="time" id="contactTime" name="contactTime"></td>
+                </tr>
+                 <tr>
+                    <td><label for="favColor">Your Favorite Color:</label></td>
+                    <td><input type="color" id="favColor" name="favColor" value="#005a9c"></td>
+                </tr>
+                <tr>
+                    <td><label for="newPassword">Create a Password (Optional):</label></td>
+                    <td><input type="password" id="newPassword" name="newPassword"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Donation Details</legend>
+            <table border="1">
+                <tr>
+                    <td><label for="campaign">Donate To:</label></td>
+                    <td>
+                        <select id="campaign" name="campaign">
+                            <optgroup label="Education">
+                                <option value="school_supplies">School Supplies</option>
+                                <option value="scholarships">Scholarships</option>
+                            </optgroup>
+                            <optgroup label="Healthcare">
+                                <option value="medical_camps">Medical Camps</option>
+                                <option value="nutrition">Nutrition Program</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="amount">Donation Amount ($):</label></td>
+                    <td>
+                        <input list="amounts" id="amount" name="amount" required>
+                        <datalist id="amounts">
+                            <option value="50"></option>
+                            <option value="100"></option>
+                            <option value="250"></option>
+                            <option value="500"></option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="donationRange">Amount Slider:</label></td>
+                    <td>
+                        <input type="range" id="donationRange" name="donationRange" min="10" max="1000" step="10" value="50" oninput="this.nextElementSibling.value = '$' + this.value">
+                        <output name="rangeValue">$50</output>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="receipt">Upload Receipt (if any):</label></td>
+                    <td><input type="file" id="receipt" name="receipt"></td>
+                </tr>
+                 <tr>
+                    <td><label for="comments">Message:</label></td>
+                    <td><textarea id="comments" name="comments" rows="4" placeholder="Any words of encouragement..."></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Submit Your Donation</legend>
+            <input type="hidden" id="trackingId" name="trackingId" value="campaign2025">
+            <input type="submit" value="Donate Now">
+            <input type="reset" value="Clear Form">
+            <input type="image" src="https://via.placeholder.com/120x40.png?text=Submit+Securely" alt="Submit" style="vertical-align: middle; margin-left: 20px;">
+        </fieldset>
+    </form>
+
+    <hr>
+    <div>
+        <h2>Hear From a Beneficiary</h2>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h2>Watch Our Work in Action</h2>
+        <video width="480" height="270" controls poster="https://via.placeholder.com/480x270.png?text=Our+Work">
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <div>
+        <h2>Visit Our Office</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.482779835987!2d76.96537751475586!3d11.00288289216773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859a495914857%3A0x6b47c50a0f4a869a!2sCoimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1658488880479!5m2!1sen!2sin" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+</body>
+</html>
